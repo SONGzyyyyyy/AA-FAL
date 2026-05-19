@@ -1,4 +1,3 @@
-python
 import os
 import torch
 import torch.nn.functional as F
@@ -209,4 +208,3 @@ class AAFALTrainer:
         loss = self.regression_loss(pred1, target1)
         loss += self.regression_loss(pred2, target2)
         return loss.mean()
-```
