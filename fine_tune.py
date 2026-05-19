@@ -188,8 +188,7 @@ def main():
     print(f"Mean test accuracy: {test_acc_all_tensor.mean()}")
     df = pd.DataFrame(test_acc_all)
     df.to_excel(
-        f"test_result/PT_{config['trainer']['class_start']}-{config['trainer']['class_end']}_"
-        f"FT_{config_ft['class_start']}-{config_ft['class_end']}_{config_ft['k_shot']}shot.xlsx"
+        f"test_result/{config_ft['k_shot']}shot.xlsx"
     )
 
 if __name__ == '__main__':
