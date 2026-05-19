@@ -1,0 +1,19 @@
+network:
+  projection_head:
+    mlp_hidden_size: 512
+    projection_size: 128
+
+trainer:
+  batch_size: 128
+  m: 0.996
+  max_epochs: 300
+  lr: 0.001
+
+iteration: 100
+
+finetune:
+  batch_size: 128
+  test_batch_size: 128
+  epochs: 200
+  lr: 0.001
+  k_shot: 5
